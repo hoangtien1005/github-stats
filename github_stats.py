@@ -539,6 +539,7 @@ async def main() -> None:
     async with aiohttp.ClientSession() as session:
         s = Stats(user, access_token, session)
         print(await s.to_str())
+        
 
 
 if __name__ == "__main__":
